@@ -3373,7 +3373,7 @@ function fetchNextData(pathname, query, isServerRender, cb) {
   function getResponse() {
     return fetch(utils_1.formatWithValidation({
       // @ts-ignore __NEXT_DATA__
-      pathname: "/nextdata/data/".concat(__NEXT_DATA__.buildId).concat(pathname, ".json"),
+      pathname: "/_next/data/".concat(__NEXT_DATA__.buildId).concat(pathname, ".json"),
       query: query
     }), {
       // Cookies are required to be present for Next.js' SSG "Preview Mode".

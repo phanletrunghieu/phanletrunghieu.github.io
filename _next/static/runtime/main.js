@@ -527,7 +527,7 @@ function initializeBuildWatcher() {
   var timeoutId = null; // Handle events
 
   var evtSource = (0, _eventsource.getEventSourceWrapper)({
-    path: '/nextdata/webpack-hmr'
+    path: '/_next/webpack-hmr'
   });
   evtSource.addMessageListener(function (event) {
     // This is the heartbeat event
@@ -893,7 +893,7 @@ function connect(options) {
         colNumber = _ref.colNumber; // Resolve invalid paths coming from react-error-overlay
 
     var resolvedFilename = fileName.replace(/^webpack:\/\//, '');
-    (0, _unfetch["default"])('/nextdata/development/open-stack-frame-in-editor' + ("?fileName=" + window.encodeURIComponent(resolvedFilename)) + ("&lineNumber=" + (lineNumber || 1)) + ("&colNumber=" + (colNumber || 1)));
+    (0, _unfetch["default"])('/_next/development/open-stack-frame-in-editor' + ("?fileName=" + window.encodeURIComponent(resolvedFilename)) + ("&lineNumber=" + (lineNumber || 1)) + ("&colNumber=" + (colNumber || 1)));
   }); // We need to keep track of if there has been a runtime error.
   // Essentially, we cannot guarantee application state was not corrupted by the
   // runtime error. To prevent confusing behavior, we forcibly reload the entire
@@ -1242,7 +1242,7 @@ function rewriteTraceLine(trace, distDir) {
   }
 
   var filename = m[1];
-  var filenameLink = filename.replace(distDir, '/nextdata/development').replace(/\\/g, '/');
+  var filenameLink = filename.replace(distDir, '/_next/development').replace(/\\/g, '/');
   trace = trace.replace(filename, filenameLink);
   return trace;
 }
@@ -2336,7 +2336,7 @@ function setupPing(assetPrefix, pathnameFn, retry) {
   exports.currentPage = currentPage = pathname; // close current EventSource connection
 
   closePing();
-  var url = assetPrefix + "/nextdata/webpack-hmr?page=" + currentPage;
+  var url = assetPrefix + "/_next/webpack-hmr?page=" + currentPage;
   evtSource = (0, _eventsource.getEventSourceWrapper)({
     path: url,
     timeout: 5000,
@@ -2517,7 +2517,7 @@ var _hotDevClient = _interopRequireDefault(__webpack_require__(/*! ./error-overl
 var _default = function _default(_ref) {
   var assetPrefix = _ref.assetPrefix;
   var options = {
-    path: assetPrefix + "/nextdata/webpack-hmr"
+    path: assetPrefix + "/_next/webpack-hmr"
   };
   var devClient = (0, _hotDevClient["default"])(options);
   devClient.subscribeToHmrEvent(function (obj) {
@@ -2762,7 +2762,7 @@ var props = data.props,
 var prefix = assetPrefix || ''; // With dynamic assetPrefix it's no longer possible to set assetPrefix at the build time
 // So, this is how we do it in the client side at runtime
 
-__webpack_require__.p = prefix + "/nextdata/"; //eslint-disable-line
+__webpack_require__.p = prefix + "/_next/"; //eslint-disable-line
 // Initialize next/config with the environment configuration
 
 envConfig.setConfig({
@@ -3514,7 +3514,7 @@ var PageLoader = /*#__PURE__*/function () {
 
       return this.promisedBuildManifest.then(function (man) {
         return man[route] && man[route].map(function (url) {
-          return _this.assetPrefix + "/nextdata/" + encodeURI(url);
+          return _this.assetPrefix + "/_next/" + encodeURI(url);
         }) || [];
       });
     }
@@ -3531,7 +3531,7 @@ var PageLoader = /*#__PURE__*/function () {
       var getHrefForSlug =
       /** @type string */
       function getHrefForSlug(path) {
-        return _this2.assetPrefix + "/nextdata/data/" + _this2.buildId + (path === '/' ? '/index' : path) + ".json";
+        return _this2.assetPrefix + "/_next/data/" + _this2.buildId + (path === '/' ? '/index' : path) + ".json";
       };
 
       var _ref2 = (0, _url.parse)(href, true),
@@ -3662,7 +3662,7 @@ var PageLoader = /*#__PURE__*/function () {
     value: function loadRoute(route) {
       route = normalizeRoute(route);
       var scriptRoute = route === '/' ? '/index.js' : route + ".js";
-      var url = this.assetPrefix + "/nextdata/static/" + encodeURIComponent(this.buildId) + "/pages" + encodeURI(scriptRoute);
+      var url = this.assetPrefix + "/_next/static/" + encodeURIComponent(this.buildId) + "/pages" + encodeURI(scriptRoute);
       this.loadScript(url, route, true);
     }
   }, {
@@ -3766,7 +3766,7 @@ var PageLoader = /*#__PURE__*/function () {
 
         if (false) {}
 
-        url = this.assetPrefix + "/nextdata/static/" + encodeURIComponent(this.buildId) + "/pages" + encodeURI(scriptRoute);
+        url = this.assetPrefix + "/_next/static/" + encodeURIComponent(this.buildId) + "/pages" + encodeURI(scriptRoute);
       }
 
       return Promise.all(document.querySelector("link[rel=\"" + relPrefetch + "\"][href^=\"" + url + "\"], script[data-next-page=\"" + route + "\"]") ? [] : [appendLink(url, relPrefetch, url.match(/\.css$/) ? 'style' : 'script'),  false && false]).then( // do not return any data
@@ -4376,7 +4376,7 @@ function fetchNextData(pathname, query, isServerRender, cb) {
   function getResponse() {
     return fetch(utils_1.formatWithValidation({
       // @ts-ignore __NEXT_DATA__
-      pathname: "/nextdata/data/".concat(__NEXT_DATA__.buildId).concat(pathname, ".json"),
+      pathname: "/_next/data/".concat(__NEXT_DATA__.buildId).concat(pathname, ".json"),
       query: query
     }), {
       // Cookies are required to be present for Next.js' SSG "Preview Mode".

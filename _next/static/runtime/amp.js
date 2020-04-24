@@ -80,7 +80,7 @@ var mostRecentHash = null;
 /* eslint-disable-next-line */
 
 var curHash = __webpack_require__.h();
-var hotUpdatePath = assetPrefix + (assetPrefix.endsWith('/') ? '' : '/') + 'nextdata/static/webpack/'; // Is there a newer version of this code available?
+var hotUpdatePath = assetPrefix + (assetPrefix.endsWith('/') ? '' : '/') + '_next/static/webpack/'; // Is there a newer version of this code available?
 
 function isUpdateAvailable() {
   // __webpack_hash__ is the hash of the current compilation.
@@ -152,7 +152,7 @@ function tryApplyUpdates() {
 }
 
 (0, _eventsource.getEventSourceWrapper)({
-  path: assetPrefix + "/nextdata/webpack-hmr"
+  path: assetPrefix + "/_next/webpack-hmr"
 }).addMessageListener(function (event) {
   if (event.data === "\uD83D\uDC93") {
     return;
@@ -1288,7 +1288,7 @@ function setupPing(assetPrefix, pathnameFn, retry) {
   exports.currentPage = currentPage = pathname; // close current EventSource connection
 
   closePing();
-  var url = assetPrefix + "/nextdata/webpack-hmr?page=" + currentPage;
+  var url = assetPrefix + "/_next/webpack-hmr?page=" + currentPage;
   evtSource = (0, _eventsource.getEventSourceWrapper)({
     path: url,
     timeout: 5000,
