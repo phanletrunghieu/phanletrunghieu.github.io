@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/post/[slug].js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/category/[...slug].js"],{
 
 /***/ "./components/Footer.js":
 /*!******************************!*\
@@ -374,6 +374,495 @@ function Meta(_ref) {
 
 /***/ }),
 
+/***/ "./components/Paginator.js":
+/*!*********************************!*\
+  !*** ./components/Paginator.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Paginator; });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _styles_Paginator_module_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../styles/Paginator.module.scss */ "./styles/Paginator.module.scss");
+/* harmony import */ var _styles_Paginator_module_scss__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_styles_Paginator_module_scss__WEBPACK_IMPORTED_MODULE_11__);
+
+
+
+
+
+
+
+
+
+var _jsxFileName = "/home/hieudeptrai/Desktop/MyProject/myblog/components/Paginator.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement;
+
+function _createSuper(Derived) { return function () { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__["default"])(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__["default"])(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+
+
+var PageButton = /*#__PURE__*/function (_PureComponent) {
+  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(PageButton, _PureComponent);
+
+  var _super = _createSuper(PageButton);
+
+  function PageButton() {
+    var _this;
+
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, PageButton);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _super.call.apply(_super, [this].concat(args));
+
+    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "onClick", function () {
+      var _this$props = _this.props,
+          href = _this$props.href,
+          baseUrl = _this$props.baseUrl,
+          page = _this$props.page;
+      next_router__WEBPACK_IMPORTED_MODULE_10___default.a.push(href, "".concat(baseUrl, "/").concat(page));
+    });
+
+    return _this;
+  }
+
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(PageButton, [{
+    key: "render",
+    value: function render() {
+      var _this$props2 = this.props,
+          current = _this$props2.current,
+          page = _this$props2.page,
+          text = _this$props2.text;
+      return __jsx("a", {
+        className: current == page ? text == "<" || text == ">" ? _styles_Paginator_module_scss__WEBPACK_IMPORTED_MODULE_11___default.a.buttonDisable : _styles_Paginator_module_scss__WEBPACK_IMPORTED_MODULE_11___default.a.buttonActive : _styles_Paginator_module_scss__WEBPACK_IMPORTED_MODULE_11___default.a.button,
+        onClick: this.onClick,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14,
+          columnNumber: 13
+        }
+      }, text || page);
+    }
+  }]);
+
+  return PageButton;
+}(react__WEBPACK_IMPORTED_MODULE_9__["PureComponent"]);
+
+var Paginator = /*#__PURE__*/function (_PureComponent2) {
+  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Paginator, _PureComponent2);
+
+  var _super2 = _createSuper(Paginator);
+
+  function Paginator() {
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Paginator);
+
+    return _super2.apply(this, arguments);
+  }
+
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Paginator, [{
+    key: "renderPageItems",
+    value: function renderPageItems() {
+      var _this2 = this;
+
+      var _this$props3 = this.props,
+          count = _this$props3.count,
+          current = _this$props3.current,
+          href = _this$props3.href,
+          baseUrl = _this$props3.baseUrl;
+      var pageButtonProps = {
+        href: href,
+        baseUrl: baseUrl,
+        current: current
+      };
+      var pageItems = [];
+
+      if (count < 8) {
+        pageItems = Object(_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(Array(count).keys()).map(function (i) {
+          return __jsx(PageButton, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+            key: i
+          }, pageButtonProps, {
+            page: i + 1,
+            __self: _this2,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 36,
+              columnNumber: 57
+            }
+          }));
+        });
+        return pageItems;
+      } // count always >= 8
+
+
+      if (current < 5) {
+        pageItems = Object(_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(Array(5).keys()).map(function (i) {
+          return __jsx(PageButton, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+            key: i
+          }, pageButtonProps, {
+            page: i + 1,
+            __self: _this2,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 42,
+              columnNumber: 53
+            }
+          }));
+        });
+        pageItems.push(__jsx(PageButton, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+          key: pageItems.length
+        }, pageButtonProps, {
+          text: "...",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 43,
+            columnNumber: 28
+          }
+        })));
+        pageItems.push(__jsx(PageButton, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+          key: pageItems.length
+        }, pageButtonProps, {
+          page: count,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 44,
+            columnNumber: 28
+          }
+        })));
+      } else if (current > count + 1 - 5) {
+        pageItems.push(__jsx(PageButton, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+          key: pageItems.length
+        }, pageButtonProps, {
+          page: 1,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 46,
+            columnNumber: 28
+          }
+        })));
+        pageItems.push(__jsx(PageButton, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+          key: pageItems.length
+        }, pageButtonProps, {
+          text: "...",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 47,
+            columnNumber: 28
+          }
+        })));
+
+        var tail = Object(_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(Array(5).keys()).map(function (i) {
+          return __jsx(PageButton, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+            key: count - 4 + i
+          }, pageButtonProps, {
+            page: count - 4 + i,
+            __self: _this2,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 48,
+              columnNumber: 52
+            }
+          }));
+        });
+
+        pageItems = pageItems.concat(tail);
+      } else {
+        pageItems.push(__jsx(PageButton, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+          key: pageItems.length
+        }, pageButtonProps, {
+          page: 1,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 51,
+            columnNumber: 28
+          }
+        })));
+        pageItems.push(__jsx(PageButton, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+          key: pageItems.length
+        }, pageButtonProps, {
+          text: "...",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 52,
+            columnNumber: 28
+          }
+        })));
+
+        var _tail = Object(_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(Array(3).keys()).map(function (i) {
+          return __jsx(PageButton, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+            key: pageItems.length + i
+          }, pageButtonProps, {
+            page: current - 1 + i,
+            __self: _this2,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 54,
+              columnNumber: 52
+            }
+          }));
+        });
+
+        pageItems = pageItems.concat(_tail);
+        pageItems.push(__jsx(PageButton, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+          key: pageItems.length
+        }, pageButtonProps, {
+          text: "...",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 57,
+            columnNumber: 28
+          }
+        })));
+        pageItems.push(__jsx(PageButton, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+          key: pageItems.length
+        }, pageButtonProps, {
+          page: count,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 58,
+            columnNumber: 28
+          }
+        })));
+      }
+
+      return pageItems;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var pageItems = this.renderPageItems();
+      var _this$props4 = this.props,
+          count = _this$props4.count,
+          current = _this$props4.current,
+          href = _this$props4.href,
+          baseUrl = _this$props4.baseUrl;
+      var pageButtonProps = {
+        href: href,
+        baseUrl: baseUrl,
+        current: current
+      };
+      return __jsx("div", {
+        className: _styles_Paginator_module_scss__WEBPACK_IMPORTED_MODULE_11___default.a.container,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 74,
+          columnNumber: 13
+        }
+      }, __jsx(PageButton, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageButtonProps, {
+        text: "<",
+        page: 1,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 75,
+          columnNumber: 17
+        }
+      })), pageItems, __jsx(PageButton, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageButtonProps, {
+        text: ">",
+        page: count,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 77,
+          columnNumber: 17
+        }
+      })));
+    }
+  }]);
+
+  return Paginator;
+}(react__WEBPACK_IMPORTED_MODULE_9__["PureComponent"]);
+
+
+
+/***/ }),
+
+/***/ "./components/PostBox.js":
+/*!*******************************!*\
+  !*** ./components/PostBox.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PostBox; });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-markdown */ "./node_modules/react-markdown/lib/react-markdown.js");
+/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _styles_PostBox_module_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/PostBox.module.scss */ "./styles/PostBox.module.scss");
+/* harmony import */ var _styles_PostBox_module_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_styles_PostBox_module_scss__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _utils_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../utils/common */ "./utils/common.js");
+
+
+
+
+
+var _jsxFileName = "/home/hieudeptrai/Desktop/MyProject/myblog/components/PostBox.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
+
+function _createSuper(Derived) { return function () { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+
+
+
+
+var PostBox = /*#__PURE__*/function (_PureComponent) {
+  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__["default"])(PostBox, _PureComponent);
+
+  var _super = _createSuper(PostBox);
+
+  function PostBox() {
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, PostBox);
+
+    return _super.apply(this, arguments);
+  }
+
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(PostBox, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          slug = _this$props.slug,
+          image = _this$props.image,
+          title = _this$props.title,
+          date = _this$props.date,
+          markdownBody = _this$props.markdownBody;
+      return __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+        key: slug,
+        href: "/post/[slug]",
+        as: "/post/".concat(slug),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11,
+          columnNumber: 13
+        }
+      }, __jsx("div", {
+        className: _styles_PostBox_module_scss__WEBPACK_IMPORTED_MODULE_8___default.a.container,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12,
+          columnNumber: 17
+        }
+      }, __jsx("div", {
+        className: _styles_PostBox_module_scss__WEBPACK_IMPORTED_MODULE_8___default.a.imageContainer,
+        style: {
+          backgroundImage: "url('".concat(image, "')")
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13,
+          columnNumber: 21
+        }
+      }), __jsx("div", {
+        className: _styles_PostBox_module_scss__WEBPACK_IMPORTED_MODULE_8___default.a.contentContainer,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14,
+          columnNumber: 21
+        }
+      }, __jsx("header", {
+        className: _styles_PostBox_module_scss__WEBPACK_IMPORTED_MODULE_8___default.a.header,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15,
+          columnNumber: 25
+        }
+      }, __jsx("h1", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16,
+          columnNumber: 29
+        }
+      }, title), __jsx("p", {
+        className: _styles_PostBox_module_scss__WEBPACK_IMPORTED_MODULE_8___default.a.date,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17,
+          columnNumber: 29
+        }
+      }, Object(_utils_common__WEBPACK_IMPORTED_MODULE_9__["reformatDate"])(date)), __jsx("span", {
+        className: _styles_PostBox_module_scss__WEBPACK_IMPORTED_MODULE_8___default.a.readDuration,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 29
+        }
+      }, "128 min")), __jsx("div", {
+        className: _styles_PostBox_module_scss__WEBPACK_IMPORTED_MODULE_8___default.a.body,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20,
+          columnNumber: 25
+        }
+      }, __jsx(react_markdown__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        source: Object(_utils_common__WEBPACK_IMPORTED_MODULE_9__["truncateSummary"])(markdownBody),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 29
+        }
+      })))));
+    }
+  }]);
+
+  return PostBox;
+}(react__WEBPACK_IMPORTED_MODULE_5__["PureComponent"]);
+
+
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/arrayWithHoles.js":
 /*!***************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/arrayWithHoles.js ***!
@@ -516,6 +1005,28 @@ module.exports = _createClass;
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _arrayWithoutHoles; });
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) {
+    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {
+      arr2[i] = arr[i];
+    }
+
+    return arr2;
+  }
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js":
 /*!**************************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js ***!
@@ -582,6 +1093,63 @@ function _createClass(Constructor, protoProps, staticProps) {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/defineProperty.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/extends.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/extends.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js ***!
@@ -630,6 +1198,38 @@ function _inherits(subClass, superClass) {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime/helpers/esm/iterableToArray.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/iterableToArray.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _iterableToArray; });
+function _iterableToArray(iter) {
+  if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _nonIterableSpread; });
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance");
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js":
 /*!******************************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js ***!
@@ -671,6 +1271,28 @@ function _setPrototypeOf(o, p) {
   };
 
   return _setPrototypeOf(o, p);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _toConsumableArray; });
+/* harmony import */ var _arrayWithoutHoles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayWithoutHoles */ "./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js");
+/* harmony import */ var _iterableToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./iterableToArray */ "./node_modules/@babel/runtime/helpers/esm/iterableToArray.js");
+/* harmony import */ var _nonIterableSpread__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nonIterableSpread */ "./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js");
+
+
+
+function _toConsumableArray(arr) {
+  return Object(_arrayWithoutHoles__WEBPACK_IMPORTED_MODULE_0__["default"])(arr) || Object(_iterableToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(arr) || Object(_nonIterableSpread__WEBPACK_IMPORTED_MODULE_2__["default"])();
 }
 
 /***/ }),
@@ -1144,24 +1766,45 @@ exports.locals = {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./styles/Post.module.scss":
-/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./node_modules/resolve-url-loader??ref--5-oneOf-3-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./styles/Post.module.scss ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./styles/Paginator.module.scss":
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./node_modules/resolve-url-loader??ref--5-oneOf-3-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./styles/Paginator.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".Post_container-size__tVUje, .Post_content__3ENjB, .Post_headerContainer__2SstR {\n  max-width: 680px;\n  margin: auto;\n  padding: 0 15px;\n}\n\n.Post_headerContainer__2SstR h1 {\n  font-size: 40px;\n}\n\n.Post_subHeader__2A2DV {\n  margin-bottom: 16px;\n}\n.Post_subHeader__2A2DV > * {\n  display: inline-block;\n  margin-right: 16px;\n}\n\n.Post_date__3SBQj {\n  color: #9ac7fa;\n  font-size: 16px;\n  margin-top: 8px;\n  font-weight: 500;\n}\n\n.Post_readDuration__WqJgS {\n  padding: 8px;\n  margin-top: 16px;\n  border: 1px solid rgba(255, 255, 255, 0.13);\n  font-size: 13px;\n}\n\n.Post_content__3ENjB {\n  font-size: 21px;\n  line-height: 1.58;\n  word-break: break-word;\n}\n.Post_content__3ENjB p {\n  margin-top: 2em;\n}\n.Post_content__3ENjB a {\n  color: #4092da;\n}", "",{"version":3,"sources":["/home/hieudeptrai/Desktop/MyProject/myblog/styles/Post.module.scss"],"names":[],"mappings":"AAAA;EACI,gBAAA;EACA,YAAA;EACA,eAAA;AACJ;;AAKI;EACI,eAAA;AAFR;;AAMA;EACI,mBAAA;AAHJ;AAKI;EACI,qBAAA;EACA,kBAAA;AAHR;;AAMA;EACI,cAAA;EACA,eAAA;EACA,eAAA;EACA,gBAAA;AAHJ;;AAMA;EACI,YAAA;EACA,gBAAA;EACA,2CAAA;EACA,eAAA;AAHJ;;AAMA;EAEI,eAAA;EACA,iBAAA;EACA,sBAAA;AAJJ;AAMI;EACI,eAAA;AAJR;AAOI;EACI,cAAA;AALR","file":"Post.module.scss","sourcesContent":[".container-size{\n    max-width: 680px;\n    margin: auto;\n    padding: 0 15px;\n}\n\n.headerContainer{\n    @extend .container-size;\n\n    h1 {\n        font-size: 40px;\n    }\n}\n\n.subHeader{\n    margin-bottom: 16px;\n\n    &>*{\n        display: inline-block;\n        margin-right: 16px;\n    }\n}\n.date{\n    color: #9ac7fa;\n    font-size: 16px;\n    margin-top: 8px;\n    font-weight: 500;\n}\n\n.readDuration{\n    padding: 8px;\n    margin-top: 16px;\n    border: 1px solid rgba(255,255,255,0.13);\n    font-size: 13px;\n}\n\n.content{\n    @extend .container-size;\n    font-size: 21px;\n    line-height: 1.58;\n    word-break: break-word;\n\n    p {\n        margin-top: 2em;\n    }\n    \n    a{\n        color: #4092da;\n    }\n}"]}]);
+exports.push([module.i, ".Paginator_container__1ZAnr {\n  text-align: center;\n  margin: 30px 0;\n}\n\n.Paginator_button__1TJVr, .Paginator_buttonDisable__15pRs, .Paginator_buttonActive__HUihv {\n  width: 32px;\n  height: 32px;\n  display: inline-block;\n  text-align: center;\n  margin: 0 5px;\n  line-height: 32px;\n  cursor: pointer;\n  color: #fff;\n}\n\n.Paginator_buttonActive__HUihv {\n  border: 1px #fff solid;\n}\n\n.Paginator_buttonDisable__15pRs {\n  border: 1px #3a3a3a solid;\n  color: #3a3a3a;\n}", "",{"version":3,"sources":["/home/hieudeptrai/Desktop/MyProject/myblog/styles/Paginator.module.scss"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,cAAA;AACJ;;AAEA;EACI,WAAA;EACA,YAAA;EACA,qBAAA;EACA,kBAAA;EACA,aAAA;EACA,iBAAA;EACA,eAAA;EACA,WAAA;AACJ;;AAEA;EAEI,sBAAA;AAAJ;;AAGA;EAEI,yBAAA;EACA,cAAA;AADJ","file":"Paginator.module.scss","sourcesContent":[".container{\n    text-align: center;\n    margin: 30px 0;\n}\n\n.button{\n    width: 32px;\n    height: 32px;\n    display: inline-block;\n    text-align: center;\n    margin: 0 5px;\n    line-height: 32px;\n    cursor: pointer;\n    color: #fff;\n}\n\n.buttonActive{\n    @extend .button;\n    border: 1px #fff solid;\n}\n\n.buttonDisable{\n    @extend .button;\n    border: 1px #3a3a3a solid;\n    color: #3a3a3a;\n}"]}]);
 // Exports
 exports.locals = {
-	"container-size": "Post_container-size__tVUje",
-	"content": "Post_content__3ENjB",
-	"headerContainer": "Post_headerContainer__2SstR",
-	"subHeader": "Post_subHeader__2A2DV",
-	"date": "Post_date__3SBQj",
-	"readDuration": "Post_readDuration__WqJgS"
+	"container": "Paginator_container__1ZAnr",
+	"button": "Paginator_button__1TJVr",
+	"buttonDisable": "Paginator_buttonDisable__15pRs",
+	"buttonActive": "Paginator_buttonActive__HUihv"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./styles/PostBox.module.scss":
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./node_modules/resolve-url-loader??ref--5-oneOf-3-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./styles/PostBox.module.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, ".PostBox_container__32pag {\n  border-radius: 10px;\n  max-width: 800px;\n  width: 90%;\n  height: 350px;\n  position: relative;\n  margin: 16px auto;\n  transition: all 0.4s;\n  background-color: #1a1a1a;\n  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2), 0px 20px 31px 3px rgba(0, 0, 0, 0.14), 0px 8px 38px 7px rgba(0, 0, 0, 0.12);\n  cursor: pointer;\n}\n.PostBox_container__32pag:hover {\n  transform: scale(1.02);\n  transition: all 0.4s;\n}\n\n.PostBox_contentContainer__1gRO0 {\n  position: relative;\n  background: linear-gradient(to right, #0d0d0c 50%, transparent 100%);\n  width: 100%;\n  height: 100%;\n  border-radius: 10px;\n  z-index: 2;\n}\n@media (max-width: 767px) {\n  .PostBox_contentContainer__1gRO0 {\n    position: absolute;\n    bottom: 0;\n    background: linear-gradient(to top, #0d0d0c 0%, #000000de 30%, #00000096 70%, transparent 100%);\n    height: auto;\n  }\n}\n\n.PostBox_header__2NRif {\n  width: 60%;\n  height: 40%;\n  padding: 24px;\n  position: relative;\n}\n@media (max-width: 767px) {\n  .PostBox_header__2NRif {\n    width: 100%;\n    padding: 0 16px;\n  }\n  .PostBox_header__2NRif h1 {\n    font-size: 22px;\n  }\n}\n\n.PostBox_date__3AxRV {\n  color: #9ac7fa;\n  font-size: 16px;\n  margin-top: 8px;\n  font-weight: 500;\n}\n\n.PostBox_readDuration__1I_Hy {\n  padding: 8px;\n  margin-top: 16px;\n  border: 1px solid rgba(255, 255, 255, 0.13);\n  display: inline-block;\n  font-size: 13px;\n}\n\n.PostBox_body__2m5Fb {\n  width: 50%;\n  height: 50%;\n  padding: 24px;\n  font-size: 13px;\n  color: #cfd6e1;\n}\n@media (max-width: 767px) {\n  .PostBox_body__2m5Fb {\n    width: 100%;\n    height: auto;\n    padding: 16px;\n  }\n}\n\n.PostBox_imageContainer__2Jypf {\n  position: absolute;\n  top: 0;\n  right: 0;\n  width: 80%;\n  height: 100%;\n  background-size: cover;\n  background-position: center;\n  background-repeat: no-repeat;\n  border-radius: 10px;\n  z-index: 1;\n}\n@media (max-width: 767px) {\n  .PostBox_imageContainer__2Jypf {\n    position: relative;\n    width: 100%;\n  }\n}", "",{"version":3,"sources":["/home/hieudeptrai/Desktop/MyProject/myblog/styles/PostBox.module.scss"],"names":[],"mappings":"AAEA;EACI,mBAAA;EACA,gBAAA;EACA,UAAA;EACA,aAAA;EACA,kBAAA;EACA,iBAAA;EACA,oBAAA;EACA,yBAAA;EACA,8HAAA;EACA,eAAA;AADJ;AAGI;EACI,sBAAA;EACA,oBAAA;AADR;;AAKA;EACI,kBAAA;EACA,oEAAA;EACA,WAAA;EACA,YAAA;EACA,mBAAA;EACA,UAAA;AAFJ;AAII;EARJ;IASQ,kBAAA;IACA,SAAA;IACA,+FAAA;IACA,YAAA;EADN;AACF;;AAIA;EACI,UAAA;EACA,WAAA;EACA,aAAA;EACA,kBAAA;AADJ;AAGI;EANJ;IAOQ,WAAA;IACA,eAAA;EAAN;EAEM;IACI,eAAA;EAAV;AACF;;AAIA;EACI,cAAA;EACA,eAAA;EACA,eAAA;EACA,gBAAA;AADJ;;AAIA;EACI,YAAA;EACA,gBAAA;EACA,2CAAA;EACA,qBAAA;EACA,eAAA;AADJ;;AAIA;EACI,UAAA;EACA,WAAA;EACA,aAAA;EACA,eAAA;EACA,cAAA;AADJ;AAGI;EAPJ;IAQQ,WAAA;IACA,YAAA;IACA,aAAA;EAAN;AACF;;AAGA;EACI,kBAAA;EACA,MAAA;EACA,QAAA;EACA,UAAA;EACA,YAAA;EACA,sBAAA;EACA,2BAAA;EACA,4BAAA;EACA,mBAAA;EACA,UAAA;AAAJ;AAEI;EAZJ;IAaQ,kBAAA;IACA,WAAA;EACN;AACF","file":"PostBox.module.scss","sourcesContent":["@import \"devices\";\n\n.container{\n    border-radius: 10px;\n    max-width: 800px;\n    width: 90%;\n    height: 350px;\n    position: relative;\n    margin: 16px auto;\n    transition: all 0.4s;\n    background-color: rgb(26, 26, 26);\n    box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2), 0px 20px 31px 3px rgba(0,0,0,0.14), 0px 8px 38px 7px rgba(0,0,0,0.12);\n    cursor: pointer;\n\n    &:hover{\n        transform: scale(1.02);\n        transition: all 0.4s;\n    }\n}\n\n.contentContainer{\n    position: relative;\n    background: linear-gradient(to right, #0d0d0c 50%, transparent 100%);\n    width: 100%;\n    height: 100%;\n    border-radius: 10px;\n    z-index: 2;\n\n    @media #{$mobile} {\n        position: absolute;\n        bottom: 0;\n        background: linear-gradient(to top, #0d0d0c 0%, #000000de 30%, #00000096 70%, transparent 100%);\n        height: auto;\n    }\n}\n\n.header{\n    width: 60%;\n    height: 40%;\n    padding: 24px;\n    position: relative;\n\n    @media #{$mobile} {\n        width: 100%;\n        padding: 0 16px;\n\n        h1 {\n            font-size: 22px;\n        }\n    }\n}\n\n.date{\n    color: #9ac7fa;\n    font-size: 16px;\n    margin-top: 8px;\n    font-weight: 500;\n}\n\n.readDuration{\n    padding: 8px;\n    margin-top: 16px;\n    border: 1px solid rgba(255,255,255,0.13);\n    display: inline-block;\n    font-size: 13px;\n}\n\n.body{\n    width: 50%;\n    height: 50%;\n    padding: 24px;\n    font-size: 13px;\n    color: #cfd6e1;\n\n    @media #{$mobile} {\n        width: 100%;\n        height: auto;\n        padding: 16px;\n    }\n}\n\n.imageContainer{\n    position: absolute;\n    top: 0;\n    right: 0;\n    width: 80%;\n    height: 100%;\n    background-size: cover;\n    background-position: center;\n    background-repeat: no-repeat;\n    border-radius: 10px;\n    z-index: 1;\n\n    @media #{$mobile} {\n        position: relative;\n        width: 100%;\n    }\n}"]}]);
+// Exports
+exports.locals = {
+	"container": "PostBox_container__32pag",
+	"contentContainer": "PostBox_contentContainer__1gRO0",
+	"header": "PostBox_header__2NRif",
+	"date": "PostBox_date__3AxRV",
+	"readDuration": "PostBox_readDuration__1I_Hy",
+	"body": "PostBox_body__2m5Fb",
+	"imageContainer": "PostBox_imageContainer__2Jypf"
 };
 
 /***/ }),
@@ -1872,21 +2515,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fpost%2F%5Bslug%5D&absolutePagePath=%2Fhome%2Fhieudeptrai%2FDesktop%2FMyProject%2Fmyblog%2Fpages%2Fpost%2F%5Bslug%5D.js!./":
-/*!*****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fpost%2F%5Bslug%5D&absolutePagePath=%2Fhome%2Fhieudeptrai%2FDesktop%2FMyProject%2Fmyblog%2Fpages%2Fpost%2F%5Bslug%5D.js ***!
-  \*****************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcategory%2F%5B...slug%5D&absolutePagePath=%2Fhome%2Fhieudeptrai%2FDesktop%2FMyProject%2Fmyblog%2Fpages%2Fcategory%2F%5B...slug%5D.js!./":
+/*!*******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcategory%2F%5B...slug%5D&absolutePagePath=%2Fhome%2Fhieudeptrai%2FDesktop%2FMyProject%2Fmyblog%2Fpages%2Fcategory%2F%5B...slug%5D.js ***!
+  \*******************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/post/[slug]", function() {
-      var mod = __webpack_require__(/*! ./pages/post/[slug].js */ "./pages/post/[slug].js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/category/[...slug]", function() {
+      var mod = __webpack_require__(/*! ./pages/category/[...slug].js */ "./pages/category/[...slug].js")
       if(true) {
-        module.hot.accept(/*! ./pages/post/[slug].js */ "./pages/post/[slug].js", function() {
-          if(!next.router.components["/post/[slug]"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/post/[slug].js */ "./pages/post/[slug].js")
-          next.router.update("/post/[slug]", updatedPage)
+        module.hot.accept(/*! ./pages/category/[...slug].js */ "./pages/category/[...slug].js", function() {
+          if(!next.router.components["/category/[...slug]"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/category/[...slug].js */ "./pages/category/[...slug].js")
+          next.router.update("/category/[...slug]", updatedPage)
         })
       }
       return mod
@@ -15444,17 +16087,17 @@ function extend() {
 
 /***/ }),
 
-/***/ "./pages/post/[slug].js":
-/*!******************************!*\
-  !*** ./pages/post/[slug].js ***!
-  \******************************/
+/***/ "./pages/category/[...slug].js":
+/*!*************************************!*\
+  !*** ./pages/category/[...slug].js ***!
+  \*************************************/
 /*! exports provided: __N_SSG, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__N_SSG", function() { return __N_SSG; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return BlogTemplate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CategoryTemplate; });
 /* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
 /* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
 /* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
@@ -15463,19 +16106,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _components_Meta__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/Meta */ "./components/Meta.js");
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/Header */ "./components/Header.js");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/Footer */ "./components/Footer.js");
-/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-markdown */ "./node_modules/react-markdown/lib/react-markdown.js");
-/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _utils_common__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../utils/common */ "./utils/common.js");
-/* harmony import */ var _styles_Post_module_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../styles/Post.module.scss */ "./styles/Post.module.scss");
-/* harmony import */ var _styles_Post_module_scss__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_styles_Post_module_scss__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _components_PostBox__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/PostBox */ "./components/PostBox.js");
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/Header */ "./components/Header.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/Footer */ "./components/Footer.js");
+/* harmony import */ var _components_Paginator__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/Paginator */ "./components/Paginator.js");
+/* harmony import */ var _utils_common__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../utils/common */ "./utils/common.js");
 
 
 
 
 
-var _jsxFileName = "/home/hieudeptrai/Desktop/MyProject/myblog/pages/post/[slug].js";
+var _jsxFileName = "/home/hieudeptrai/Desktop/MyProject/myblog/pages/category/[...slug].js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 
 function _createSuper(Derived) { return function () { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, result); }; }
@@ -15490,142 +16131,113 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
-var BlogTemplate = /*#__PURE__*/function (_PureComponent) {
-  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__["default"])(BlogTemplate, _PureComponent);
+var CategoryTemplate = /*#__PURE__*/function (_PureComponent) {
+  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__["default"])(CategoryTemplate, _PureComponent);
 
-  var _super = _createSuper(BlogTemplate);
+  var _super = _createSuper(CategoryTemplate);
 
-  function BlogTemplate() {
-    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, BlogTemplate);
+  function CategoryTemplate() {
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, CategoryTemplate);
 
     return _super.apply(this, arguments);
   }
 
-  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(BlogTemplate, [{
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(CategoryTemplate, [{
     key: "render",
     value: function render() {
+      var _this = this;
+
       var _this$props = this.props,
-          siteTitle = _this$props.siteTitle,
-          markdownBody = _this$props.markdownBody,
-          frontmatter = _this$props.frontmatter,
-          categories = _this$props.categories;
-      if (!frontmatter) return null;
+          allBlogs = _this$props.allBlogs,
+          title = _this$props.title,
+          description = _this$props.description,
+          categories = _this$props.categories,
+          slug = _this$props.slug,
+          currentPage = _this$props.currentPage,
+          totalPage = _this$props.totalPage;
+      var currentCategory = categories.find(function (c) {
+        return Object(_utils_common__WEBPACK_IMPORTED_MODULE_11__["getSlug"])(c) == slug;
+      });
       return __jsx("div", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19,
+          lineNumber: 17,
           columnNumber: 13
         }
       }, __jsx(_components_Meta__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        title: "".concat(frontmatter.title, " - ").concat(siteTitle),
-        description: Object(_utils_common__WEBPACK_IMPORTED_MODULE_10__["truncateSummary"])(markdownBody),
-        image: frontmatter.image,
+        title: "".concat(currentCategory, " - ").concat(title),
+        description: description,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 17
+        }
+      }), __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        categories: categories,
+        currentSlug: slug,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 17
+        }
+      }), __jsx("div", {
+        style: {
+          marginTop: 80
+        },
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 20,
           columnNumber: 17
         }
-      }), __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_7__["default"], {
-        categories: categories,
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 25,
-          columnNumber: 17
-        }
-      }), __jsx("div", {
-        style: {
-          marginTop: 120,
-          marginBottom: 50
-        },
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 26,
-          columnNumber: 17
-        }
-      }, __jsx("div", {
-        className: _styles_Post_module_scss__WEBPACK_IMPORTED_MODULE_11___default.a.headerContainer,
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 27,
-          columnNumber: 21
-        }
-      }, __jsx("h1", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28,
-          columnNumber: 25
-        }
-      }, frontmatter.title), __jsx("div", {
-        className: _styles_Post_module_scss__WEBPACK_IMPORTED_MODULE_11___default.a.subHeader,
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29,
-          columnNumber: 25
-        }
-      }, __jsx("p", {
-        className: _styles_Post_module_scss__WEBPACK_IMPORTED_MODULE_11___default.a.date,
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 30,
-          columnNumber: 29
-        }
-      }, Object(_utils_common__WEBPACK_IMPORTED_MODULE_10__["reformatDate"])(frontmatter.date)), __jsx("span", {
-        className: _styles_Post_module_scss__WEBPACK_IMPORTED_MODULE_11___default.a.readDuration,
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 31,
-          columnNumber: 29
-        }
-      }, frontmatter.readDuration))), __jsx("img", {
-        src: frontmatter.image,
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 34,
-          columnNumber: 21
-        }
-      }), __jsx("div", {
-        className: _styles_Post_module_scss__WEBPACK_IMPORTED_MODULE_11___default.a.content,
+      }, allBlogs.map(function (post) {
+        return __jsx(_components_PostBox__WEBPACK_IMPORTED_MODULE_7__["default"], {
+          key: post.slug,
+          image: post.frontmatter.image,
+          title: post.frontmatter.title,
+          date: post.frontmatter.date,
+          readDuration: post.frontmatter.readDuration,
+          markdownBody: post.markdownBody,
+          slug: post.slug,
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 23,
+            columnNumber: 29
+          }
+        });
+      })), __jsx(_components_Paginator__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        count: totalPage,
+        current: currentPage,
+        href: "/category/[...slug]",
+        baseUrl: "/category/" + Object(_utils_common__WEBPACK_IMPORTED_MODULE_11__["getSlug"])(currentCategory),
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 35,
-          columnNumber: 21
+          columnNumber: 17
         }
-      }, __jsx(react_markdown__WEBPACK_IMPORTED_MODULE_9___default.a, {
-        source: markdownBody,
+      }), __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36,
-          columnNumber: 25
-        }
-      }))), __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_8__["default"], {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 39,
+          lineNumber: 41,
           columnNumber: 17
         }
       }));
     }
   }]);
 
-  return BlogTemplate;
+  return CategoryTemplate;
 }(react__WEBPACK_IMPORTED_MODULE_5__["PureComponent"]);
 
 var __N_SSG = true;
 
-BlogTemplate.defaultProps = {
+CategoryTemplate.defaultProps = {
+  allBlogs: [],
   categories: []
 };
 
@@ -15753,14 +16365,14 @@ if (true) {
 
 /***/ }),
 
-/***/ "./styles/Post.module.scss":
-/*!*********************************!*\
-  !*** ./styles/Post.module.scss ***!
-  \*********************************/
+/***/ "./styles/Paginator.module.scss":
+/*!**************************************!*\
+  !*** ./styles/Paginator.module.scss ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./Post.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./styles/Post.module.scss");
+var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./Paginator.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./styles/Paginator.module.scss");
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -15794,9 +16406,70 @@ if (content.locals) {
 if (true) {
   if (!content.locals) {
     module.hot.accept(
-      /*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./Post.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./styles/Post.module.scss",
+      /*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./Paginator.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./styles/Paginator.module.scss",
       function () {
-        var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./Post.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./styles/Post.module.scss");
+        var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./Paginator.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./styles/Paginator.module.scss");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
+
+/***/ }),
+
+/***/ "./styles/PostBox.module.scss":
+/*!************************************!*\
+  !*** ./styles/PostBox.module.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./PostBox.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./styles/PostBox.module.scss");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./PostBox.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./styles/PostBox.module.scss",
+      function () {
+        var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./PostBox.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./styles/PostBox.module.scss");
 
         if (typeof newContent === 'string') {
           newContent = [[module.i, newContent, '']];
@@ -15841,14 +16514,14 @@ function truncateSummary(content) {
 
 /***/ }),
 
-/***/ 2:
-/*!*********************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fpost%2F%5Bslug%5D&absolutePagePath=%2Fhome%2Fhieudeptrai%2FDesktop%2FMyProject%2Fmyblog%2Fpages%2Fpost%2F%5Bslug%5D.js ***!
-  \*********************************************************************************************************************************************************************/
+/***/ 4:
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fcategory%2F%5B...slug%5D&absolutePagePath=%2Fhome%2Fhieudeptrai%2FDesktop%2FMyProject%2Fmyblog%2Fpages%2Fcategory%2F%5B...slug%5D.js ***!
+  \***********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fpost%2F%5Bslug%5D&absolutePagePath=%2Fhome%2Fhieudeptrai%2FDesktop%2FMyProject%2Fmyblog%2Fpages%2Fpost%2F%5Bslug%5D.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fpost%2F%5Bslug%5D&absolutePagePath=%2Fhome%2Fhieudeptrai%2FDesktop%2FMyProject%2Fmyblog%2Fpages%2Fpost%2F%5Bslug%5D.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fcategory%2F%5B...slug%5D&absolutePagePath=%2Fhome%2Fhieudeptrai%2FDesktop%2FMyProject%2Fmyblog%2Fpages%2Fcategory%2F%5B...slug%5D.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcategory%2F%5B...slug%5D&absolutePagePath=%2Fhome%2Fhieudeptrai%2FDesktop%2FMyProject%2Fmyblog%2Fpages%2Fcategory%2F%5B...slug%5D.js!./");
 
 
 /***/ }),
@@ -15864,5 +16537,5 @@ module.exports = dll_c2e10d183b950a67d9e7;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=[slug].js.map
+},[[4,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=[...slug].js.map
