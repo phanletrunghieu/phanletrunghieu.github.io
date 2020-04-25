@@ -330,26 +330,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _data_config_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data/config.json */ "./data/config.json");
+var _data_config_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/config.json */ "./data/config.json", 1);
 var _jsxFileName = "/home/hieudeptrai/Desktop/MyProject/myblog/components/Meta.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 function Meta(_ref) {
   var title = _ref.title,
       description = _ref.description,
       image = _ref.image;
+  var img = image || "http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg";
+
+  if (img.indexOf("http://") == -1 && img.indexOf("https://") == -1) {
+    img = _data_config_json__WEBPACK_IMPORTED_MODULE_2__.url + img;
+  }
+
   return __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4,
+      lineNumber: 9,
       columnNumber: 9
     }
   }, __jsx("title", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5,
+      lineNumber: 10,
       columnNumber: 13
     }
   }, title), __jsx("meta", {
@@ -358,7 +367,7 @@ function Meta(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 11,
       columnNumber: 13
     }
   }), __jsx("meta", {
@@ -366,7 +375,52 @@ function Meta(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 12,
+      columnNumber: 13
+    }
+  }), __jsx("meta", {
+    name: "description",
+    content: description,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 13
+    }
+  }), __jsx("meta", {
+    property: "og:type",
+    content: "article",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 13
+    }
+  }), __jsx("meta", {
+    property: "og:title",
+    content: title,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 13
+    }
+  }), __jsx("meta", {
+    property: "og:description",
+    content: description,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 13
+    }
+  }), __jsx("meta", {
+    property: "og:image",
+    content: img,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
       columnNumber: 13
     }
   }));
@@ -860,6 +914,17 @@ var PostBox = /*#__PURE__*/function (_PureComponent) {
 }(react__WEBPACK_IMPORTED_MODULE_5__["PureComponent"]);
 
 
+
+/***/ }),
+
+/***/ "./data/config.json":
+/*!**************************!*\
+  !*** ./data/config.json ***!
+  \**************************/
+/*! exports provided: title, description, url, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"title\":\"Hlog - Cùng nhau mò mẫm\",\"description\":\"Cùng nhau chia sẻ kinh nghiệm, mò mẫm kiến thức mới\",\"url\":\"https://phanletrunghieu.github.io\"}");
 
 /***/ }),
 
