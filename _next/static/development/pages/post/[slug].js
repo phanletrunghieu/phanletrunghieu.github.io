@@ -26,7 +26,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/hieudeptrai/MyProjects/myblog/components/CodeBlock.js";
+var _jsxFileName = "/home/hieudeptrai/Desktop/MyProject/myblog/components/CodeBlock.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
 
 function _createSuper(Derived) { return function () { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, result); }; }
@@ -106,7 +106,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/hieudeptrai/MyProjects/myblog/components/Footer.js";
+var _jsxFileName = "/home/hieudeptrai/Desktop/MyProject/myblog/components/Footer.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 
 function _createSuper(Derived) { return function () { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, result); }; }
@@ -295,7 +295,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/hieudeptrai/MyProjects/myblog/components/Header.js";
+var _jsxFileName = "/home/hieudeptrai/Desktop/MyProject/myblog/components/Header.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 
 function _createSuper(Derived) { return function () { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, result); }; }
@@ -414,7 +414,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _data_config_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data/config.json */ "./data/config.json");
 var _data_config_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/config.json */ "./data/config.json", 1);
-var _jsxFileName = "/Users/hieudeptrai/MyProjects/myblog/components/Meta.js";
+var _jsxFileName = "/home/hieudeptrai/Desktop/MyProject/myblog/components/Meta.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -1351,7 +1351,7 @@ function stringify(values, options) {
 
 exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".Footer_content__3hdD7 {\n  display: flex;\n  justify-content: space-between;\n  margin: 0 50px 20px;\n  padding-top: 20px;\n  border-top: 1px solid rgba(255, 255, 255, 0.54);\n}\n\n.Footer_logo__2F2BD {\n  font-size: 31px;\n  font-weight: 600;\n}\n\n.Footer_iconContainer__3ouva a {\n  margin: 0 3px;\n}\n\n.Footer_logoSvg__XMKMu {\n  width: 30px;\n  height: 30px;\n  color: #fff;\n}", "",{"version":3,"sources":["/Users/hieudeptrai/MyProjects/myblog/styles/Footer.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,iBAAA;EACA,+CAAA;AACJ;;AAEA;EACI,eAAA;EACA,gBAAA;AACJ;;AAGI;EACI,aAAA;AAAR;;AAIA;EACI,WAAA;EACA,YAAA;EACA,WAAA;AADJ","file":"Footer.module.scss","sourcesContent":[".content{\n    display: flex;\n    justify-content: space-between;\n    margin: 0 50px 20px;\n    padding-top: 20px;\n    border-top: 1px solid rgba(255, 255, 255, 0.54);\n}\n\n.logo{\n    font-size: 31px;\n    font-weight: 600;\n}\n\n.iconContainer{\n    a {\n        margin: 0 3px;\n    }\n}\n\n.logoSvg{\n    width: 30px;\n    height: 30px;\n    color: #fff;\n}\n"]}]);
+exports.push([module.i, ".Footer_content__3hdD7 {\n  display: flex;\n  justify-content: space-between;\n  margin: 0 50px 20px;\n  padding-top: 20px;\n  border-top: 1px solid rgba(255, 255, 255, 0.54);\n}\n\n.Footer_logo__2F2BD {\n  font-size: 31px;\n  font-weight: 600;\n}\n\n.Footer_iconContainer__3ouva a {\n  margin: 0 3px;\n}\n\n.Footer_logoSvg__XMKMu {\n  width: 30px;\n  height: 30px;\n  color: #fff;\n}", "",{"version":3,"sources":["/home/hieudeptrai/Desktop/MyProject/myblog/styles/Footer.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,iBAAA;EACA,+CAAA;AACJ;;AAEA;EACI,eAAA;EACA,gBAAA;AACJ;;AAGI;EACI,aAAA;AAAR;;AAIA;EACI,WAAA;EACA,YAAA;EACA,WAAA;AADJ","file":"Footer.module.scss","sourcesContent":[".content{\n    display: flex;\n    justify-content: space-between;\n    margin: 0 50px 20px;\n    padding-top: 20px;\n    border-top: 1px solid rgba(255, 255, 255, 0.54);\n}\n\n.logo{\n    font-size: 31px;\n    font-weight: 600;\n}\n\n.iconContainer{\n    a {\n        margin: 0 3px;\n    }\n}\n\n.logoSvg{\n    width: 30px;\n    height: 30px;\n    color: #fff;\n}\n"]}]);
 // Exports
 exports.locals = {
 	"content": "Footer_content__3hdD7",
@@ -1371,7 +1371,7 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".Header_container__13qZs {\n  display: flex;\n  width: 100%;\n  z-index: 999;\n  position: fixed;\n  top: 0;\n  flex-wrap: wrap;\n  align-items: center;\n  justify-content: space-between;\n  padding: 20px;\n  background-color: #1a1a1a;\n}\n\n.Header_logo__1ZEvY {\n  font-size: 32px;\n  font-weight: 300;\n  letter-spacing: 1px;\n  white-space: nowrap;\n  cursor: pointer;\n}\n\n.Header_category__10c-V, .Header_categoryActive__1aqxb {\n  color: inherit;\n  cursor: pointer;\n  margin: 0 16px;\n  position: relative;\n  font-size: 17px;\n  font-weight: 600;\n}\n.Header_category__10c-V:after, .Header_categoryActive__1aqxb:after {\n  content: \"\";\n  width: 100%;\n  height: 0;\n  opacity: 0;\n  left: 0;\n  bottom: 0;\n  z-index: 1;\n  position: absolute;\n  transition: all 200ms linear;\n  background-color: rgba(255, 255, 255, 0.5);\n}\n.Header_category__10c-V:hover:after, .Header_categoryActive__1aqxb:hover:after {\n  height: 3px;\n  opacity: 1;\n}\n\n.Header_categoryActive__1aqxb:after {\n  height: 3px;\n  opacity: 1;\n}", "",{"version":3,"sources":["/Users/hieudeptrai/MyProjects/myblog/styles/Header.module.scss","/Users/hieudeptrai/MyProjects/myblog/styles/_colors.scss"],"names":[],"mappings":"AAEA;EACI,aAAA;EACA,WAAA;EACA,YAAA;EACA,eAAA;EACA,MAAA;EACA,eAAA;EACA,mBAAA;EACA,8BAAA;EACA,aAAA;EACA,yBCZa;ADWjB;;AAIA;EACI,eAAA;EACA,gBAAA;EACA,mBAAA;EACA,mBAAA;EACA,eAAA;AADJ;;AAIA;EACI,cAAA;EACA,eAAA;EACA,cAAA;EACA,kBAAA;EACA,eAAA;EACA,gBAAA;AADJ;AAGI;EACI,WAAA;EACA,WAAA;EACA,SAAA;EACA,UAAA;EACA,OAAA;EACA,SAAA;EACA,UAAA;EACA,kBAAA;EACA,4BAAA;EACA,0CAAA;AADR;AAII;EACI,WAAA;EACA,UAAA;AAFR;;AASI;EACI,WAAA;EACA,UAAA;AANR","file":"Header.module.scss","sourcesContent":["@import \"colors\";\n\n.container{\n    display: flex;\n    width: 100%;\n    z-index: 999;\n    position: fixed;\n    top: 0;\n    flex-wrap: wrap;\n    align-items: center;\n    justify-content: space-between;\n    padding: 20px;\n    background-color: $mainBackground;\n}\n\n.logo{\n    font-size: 32px;\n    font-weight: 300;\n    letter-spacing: 1px;\n    white-space: nowrap;\n    cursor: pointer;\n}\n\n.category{\n    color: inherit;\n    cursor: pointer;\n    margin: 0 16px;\n    position: relative;\n    font-size: 17px;\n    font-weight: 600;\n\n    &:after{\n        content: \"\";\n        width: 100%;\n        height: 0;\n        opacity: 0;\n        left: 0;\n        bottom: 0;\n        z-index: 1;\n        position: absolute;\n        transition: all 200ms linear;\n        background-color: rgba(255,255,255,0.5);\n    }\n\n    &:hover:after{\n        height: 3px;\n        opacity: 1;\n    }\n}\n\n.categoryActive{\n    @extend .category;\n\n    &:after{\n        height: 3px;\n        opacity: 1;\n    }\n}","$mainBackground: rgb(26, 26, 26);"]}]);
+exports.push([module.i, ".Header_container__13qZs {\n  display: flex;\n  width: 100%;\n  z-index: 999;\n  position: fixed;\n  top: 0;\n  flex-wrap: wrap;\n  align-items: center;\n  justify-content: space-between;\n  padding: 20px;\n  background-color: #1a1a1a;\n}\n\n.Header_logo__1ZEvY {\n  font-size: 32px;\n  font-weight: 300;\n  letter-spacing: 1px;\n  white-space: nowrap;\n  cursor: pointer;\n}\n\n.Header_category__10c-V, .Header_categoryActive__1aqxb {\n  color: inherit;\n  cursor: pointer;\n  margin: 0 16px;\n  position: relative;\n  font-size: 17px;\n  font-weight: 600;\n}\n.Header_category__10c-V:after, .Header_categoryActive__1aqxb:after {\n  content: \"\";\n  width: 100%;\n  height: 0;\n  opacity: 0;\n  left: 0;\n  bottom: 0;\n  z-index: 1;\n  position: absolute;\n  transition: all 200ms linear;\n  background-color: rgba(255, 255, 255, 0.5);\n}\n.Header_category__10c-V:hover:after, .Header_categoryActive__1aqxb:hover:after {\n  height: 3px;\n  opacity: 1;\n}\n\n.Header_categoryActive__1aqxb:after {\n  height: 3px;\n  opacity: 1;\n}", "",{"version":3,"sources":["/home/hieudeptrai/Desktop/MyProject/myblog/styles/Header.module.scss","/home/hieudeptrai/Desktop/MyProject/myblog/styles/_colors.scss"],"names":[],"mappings":"AAEA;EACI,aAAA;EACA,WAAA;EACA,YAAA;EACA,eAAA;EACA,MAAA;EACA,eAAA;EACA,mBAAA;EACA,8BAAA;EACA,aAAA;EACA,yBCZa;ADWjB;;AAIA;EACI,eAAA;EACA,gBAAA;EACA,mBAAA;EACA,mBAAA;EACA,eAAA;AADJ;;AAIA;EACI,cAAA;EACA,eAAA;EACA,cAAA;EACA,kBAAA;EACA,eAAA;EACA,gBAAA;AADJ;AAGI;EACI,WAAA;EACA,WAAA;EACA,SAAA;EACA,UAAA;EACA,OAAA;EACA,SAAA;EACA,UAAA;EACA,kBAAA;EACA,4BAAA;EACA,0CAAA;AADR;AAII;EACI,WAAA;EACA,UAAA;AAFR;;AASI;EACI,WAAA;EACA,UAAA;AANR","file":"Header.module.scss","sourcesContent":["@import \"colors\";\n\n.container{\n    display: flex;\n    width: 100%;\n    z-index: 999;\n    position: fixed;\n    top: 0;\n    flex-wrap: wrap;\n    align-items: center;\n    justify-content: space-between;\n    padding: 20px;\n    background-color: $mainBackground;\n}\n\n.logo{\n    font-size: 32px;\n    font-weight: 300;\n    letter-spacing: 1px;\n    white-space: nowrap;\n    cursor: pointer;\n}\n\n.category{\n    color: inherit;\n    cursor: pointer;\n    margin: 0 16px;\n    position: relative;\n    font-size: 17px;\n    font-weight: 600;\n\n    &:after{\n        content: \"\";\n        width: 100%;\n        height: 0;\n        opacity: 0;\n        left: 0;\n        bottom: 0;\n        z-index: 1;\n        position: absolute;\n        transition: all 200ms linear;\n        background-color: rgba(255,255,255,0.5);\n    }\n\n    &:hover:after{\n        height: 3px;\n        opacity: 1;\n    }\n}\n\n.categoryActive{\n    @extend .category;\n\n    &:after{\n        height: 3px;\n        opacity: 1;\n    }\n}","$mainBackground: rgb(26, 26, 26);"]}]);
 // Exports
 exports.locals = {
 	"container": "Header_container__13qZs",
@@ -1391,7 +1391,7 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".Post_container-size__tVUje, .Post_content__3ENjB, .Post_headerContainer__2SstR {\n  max-width: 680px;\n  margin: auto;\n  padding: 0 15px;\n}\n\n.Post_headerContainer__2SstR h1 {\n  font-size: 40px;\n}\n\n.Post_subHeader__2A2DV {\n  margin-bottom: 16px;\n}\n.Post_subHeader__2A2DV > * {\n  display: inline-block;\n  margin-right: 16px;\n}\n\n.Post_date__3SBQj {\n  color: #9ac7fa;\n  font-size: 16px;\n  margin-top: 8px;\n  font-weight: 500;\n}\n\n.Post_readDuration__WqJgS {\n  padding: 8px;\n  margin-top: 16px;\n  border: 1px solid rgba(255, 255, 255, 0.13);\n  font-size: 13px;\n}\n\n.Post_content__3ENjB {\n  font-size: 21px;\n  line-height: 1.58;\n  word-break: break-word;\n}\n.Post_content__3ENjB h2, .Post_content__3ENjB h3, .Post_content__3ENjB h4, .Post_content__3ENjB h5 {\n  margin-top: 2em;\n}\n.Post_content__3ENjB p {\n  margin-top: 0.5em;\n  margin-bottom: 2em;\n}\n.Post_content__3ENjB a {\n  color: #4092da;\n}\n.Post_content__3ENjB strong {\n  font-weight: bold;\n}\n.Post_content__3ENjB code {\n  background-color: rgba(255, 255, 255, 0.18);\n  border-radius: 3px;\n  padding: 2px 4px;\n}", "",{"version":3,"sources":["/Users/hieudeptrai/MyProjects/myblog/styles/Post.module.scss"],"names":[],"mappings":"AAAA;EACI,gBAAA;EACA,YAAA;EACA,eAAA;AACJ;;AAKI;EACI,eAAA;AAFR;;AAMA;EACI,mBAAA;AAHJ;AAKI;EACI,qBAAA;EACA,kBAAA;AAHR;;AAMA;EACI,cAAA;EACA,eAAA;EACA,eAAA;EACA,gBAAA;AAHJ;;AAMA;EACI,YAAA;EACA,gBAAA;EACA,2CAAA;EACA,eAAA;AAHJ;;AAMA;EAEI,eAAA;EACA,iBAAA;EACA,sBAAA;AAJJ;AAMI;EACI,eAAA;AAJR;AAOI;EACI,iBAAA;EACA,kBAAA;AALR;AAQI;EACI,cAAA;AANR;AASI;EACI,iBAAA;AAPR;AAUI;EACI,2CAAA;EACA,kBAAA;EACA,gBAAA;AARR","file":"Post.module.scss","sourcesContent":[".container-size{\n    max-width: 680px;\n    margin: auto;\n    padding: 0 15px;\n}\n\n.headerContainer{\n    @extend .container-size;\n\n    h1 {\n        font-size: 40px;\n    }\n}\n\n.subHeader{\n    margin-bottom: 16px;\n\n    &>*{\n        display: inline-block;\n        margin-right: 16px;\n    }\n}\n.date{\n    color: #9ac7fa;\n    font-size: 16px;\n    margin-top: 8px;\n    font-weight: 500;\n}\n\n.readDuration{\n    padding: 8px;\n    margin-top: 16px;\n    border: 1px solid rgba(255,255,255,0.13);\n    font-size: 13px;\n}\n\n.content{\n    @extend .container-size;\n    font-size: 21px;\n    line-height: 1.58;\n    word-break: break-word;\n\n    h2, h3, h4, h5 {\n        margin-top: 2em;\n    }\n    \n    p {\n        margin-top: 0.5em;\n        margin-bottom: 2em;\n    }\n\n    a{\n        color: #4092da;\n    }\n\n    strong{\n        font-weight: bold;\n    }\n\n    code {\n        background-color: rgba(255, 255, 255, 0.18);\n        border-radius: 3px;\n        padding: 2px 4px;\n    }\n}"]}]);
+exports.push([module.i, ".Post_container-size__tVUje, .Post_content__3ENjB, .Post_headerContainer__2SstR {\n  max-width: 680px;\n  margin: auto;\n  padding: 0 15px;\n}\n\n.Post_headerContainer__2SstR h1 {\n  font-size: 40px;\n}\n\n.Post_subHeader__2A2DV {\n  margin-bottom: 16px;\n}\n.Post_subHeader__2A2DV > * {\n  display: inline-block;\n  margin-right: 16px;\n}\n\n.Post_date__3SBQj {\n  color: #9ac7fa;\n  font-size: 16px;\n  margin-top: 8px;\n  font-weight: 500;\n}\n\n.Post_readDuration__WqJgS {\n  padding: 8px;\n  margin-top: 16px;\n  border: 1px solid rgba(255, 255, 255, 0.13);\n  font-size: 13px;\n}\n\n.Post_content__3ENjB {\n  font-size: 21px;\n  line-height: 1.58;\n  word-break: break-word;\n}\n.Post_content__3ENjB h2, .Post_content__3ENjB h3, .Post_content__3ENjB h4, .Post_content__3ENjB h5 {\n  margin-top: 2em;\n}\n.Post_content__3ENjB p {\n  margin-top: 0.5em;\n  margin-bottom: 2em;\n}\n.Post_content__3ENjB a {\n  color: #4092da;\n}\n.Post_content__3ENjB strong {\n  font-weight: bold;\n}\n.Post_content__3ENjB code {\n  background-color: rgba(255, 255, 255, 0.18);\n  border-radius: 3px;\n  padding: 2px 4px;\n}", "",{"version":3,"sources":["/home/hieudeptrai/Desktop/MyProject/myblog/styles/Post.module.scss"],"names":[],"mappings":"AAAA;EACI,gBAAA;EACA,YAAA;EACA,eAAA;AACJ;;AAKI;EACI,eAAA;AAFR;;AAMA;EACI,mBAAA;AAHJ;AAKI;EACI,qBAAA;EACA,kBAAA;AAHR;;AAMA;EACI,cAAA;EACA,eAAA;EACA,eAAA;EACA,gBAAA;AAHJ;;AAMA;EACI,YAAA;EACA,gBAAA;EACA,2CAAA;EACA,eAAA;AAHJ;;AAMA;EAEI,eAAA;EACA,iBAAA;EACA,sBAAA;AAJJ;AAMI;EACI,eAAA;AAJR;AAOI;EACI,iBAAA;EACA,kBAAA;AALR;AAQI;EACI,cAAA;AANR;AASI;EACI,iBAAA;AAPR;AAUI;EACI,2CAAA;EACA,kBAAA;EACA,gBAAA;AARR","file":"Post.module.scss","sourcesContent":[".container-size{\n    max-width: 680px;\n    margin: auto;\n    padding: 0 15px;\n}\n\n.headerContainer{\n    @extend .container-size;\n\n    h1 {\n        font-size: 40px;\n    }\n}\n\n.subHeader{\n    margin-bottom: 16px;\n\n    &>*{\n        display: inline-block;\n        margin-right: 16px;\n    }\n}\n.date{\n    color: #9ac7fa;\n    font-size: 16px;\n    margin-top: 8px;\n    font-weight: 500;\n}\n\n.readDuration{\n    padding: 8px;\n    margin-top: 16px;\n    border: 1px solid rgba(255,255,255,0.13);\n    font-size: 13px;\n}\n\n.content{\n    @extend .container-size;\n    font-size: 21px;\n    line-height: 1.58;\n    word-break: break-word;\n\n    h2, h3, h4, h5 {\n        margin-top: 2em;\n    }\n    \n    p {\n        margin-top: 0.5em;\n        margin-bottom: 2em;\n    }\n\n    a{\n        color: #4092da;\n    }\n\n    strong{\n        font-weight: bold;\n    }\n\n    code {\n        background-color: rgba(255, 255, 255, 0.18);\n        border-radius: 3px;\n        padding: 2px 4px;\n    }\n}"]}]);
 // Exports
 exports.locals = {
 	"container-size": "Post_container-size__tVUje",
@@ -27937,10 +27937,10 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fpost%2F%5Bslug%5D&absolutePagePath=%2FUsers%2Fhieudeptrai%2FMyProjects%2Fmyblog%2Fpages%2Fpost%2F%5Bslug%5D.js!./":
-/*!*********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fpost%2F%5Bslug%5D&absolutePagePath=%2FUsers%2Fhieudeptrai%2FMyProjects%2Fmyblog%2Fpages%2Fpost%2F%5Bslug%5D.js ***!
-  \*********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fpost%2F%5Bslug%5D&absolutePagePath=%2Fhome%2Fhieudeptrai%2FDesktop%2FMyProject%2Fmyblog%2Fpages%2Fpost%2F%5Bslug%5D.js!./":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fpost%2F%5Bslug%5D&absolutePagePath=%2Fhome%2Fhieudeptrai%2FDesktop%2FMyProject%2Fmyblog%2Fpages%2Fpost%2F%5Bslug%5D.js ***!
+  \*****************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -59306,7 +59306,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/hieudeptrai/MyProjects/myblog/pages/post/[slug].js";
+var _jsxFileName = "/home/hieudeptrai/Desktop/MyProject/myblog/pages/post/[slug].js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 
 function _createSuper(Derived) { return function () { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, result); }; }
@@ -59712,14 +59712,14 @@ function truncateSummary(content) {
 
 /***/ }),
 
-/***/ 3:
-/*!*************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fpost%2F%5Bslug%5D&absolutePagePath=%2FUsers%2Fhieudeptrai%2FMyProjects%2Fmyblog%2Fpages%2Fpost%2F%5Bslug%5D.js ***!
-  \*************************************************************************************************************************************************************/
+/***/ 2:
+/*!*********************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fpost%2F%5Bslug%5D&absolutePagePath=%2Fhome%2Fhieudeptrai%2FDesktop%2FMyProject%2Fmyblog%2Fpages%2Fpost%2F%5Bslug%5D.js ***!
+  \*********************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fpost%2F%5Bslug%5D&absolutePagePath=%2FUsers%2Fhieudeptrai%2FMyProjects%2Fmyblog%2Fpages%2Fpost%2F%5Bslug%5D.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fpost%2F%5Bslug%5D&absolutePagePath=%2FUsers%2Fhieudeptrai%2FMyProjects%2Fmyblog%2Fpages%2Fpost%2F%5Bslug%5D.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fpost%2F%5Bslug%5D&absolutePagePath=%2Fhome%2Fhieudeptrai%2FDesktop%2FMyProject%2Fmyblog%2Fpages%2Fpost%2F%5Bslug%5D.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fpost%2F%5Bslug%5D&absolutePagePath=%2Fhome%2Fhieudeptrai%2FDesktop%2FMyProject%2Fmyblog%2Fpages%2Fpost%2F%5Bslug%5D.js!./");
 
 
 /***/ }),
@@ -59735,5 +59735,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[slug].js.map
