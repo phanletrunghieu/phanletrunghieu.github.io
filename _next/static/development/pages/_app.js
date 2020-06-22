@@ -24,7 +24,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/hieudeptrai/Desktop/MyProject/myblog/components/layouts/Default.js";
+var _jsxFileName = "/Users/hieudeptrai/MyProjects/myblog/components/layouts/Default.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
 
 function _createSuper(Derived) { return function () { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, result); }; }
@@ -697,7 +697,7 @@ module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/
 
 exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, "body {\n  background-color: #1a1a1a;\n  color: #FFF;\n}\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  font-family: \"Montserrat\", sans-serif;\n  font-weight: 400;\n}\n\nh1 {\n  font-size: 25px;\n}\n\nimg {\n  max-width: 100%;\n}", "",{"version":3,"sources":["/home/hieudeptrai/Desktop/MyProject/myblog/styles/styles.scss","/home/hieudeptrai/Desktop/MyProject/myblog/styles/_colors.scss"],"names":[],"mappings":"AAEA;EACI,yBCHa;EDIb,WAAA;AADJ;;AAIA;EACI,sBAAA;EACA,SAAA;EACA,UAAA;EACA,qCAAA;EACA,gBAAA;AADJ;;AAIA;EACI,eAAA;AADJ;;AAIA;EACI,eAAA;AADJ","file":"styles.scss","sourcesContent":["@import \"colors\";\n\nbody{\n    background-color: $mainBackground;\n    color: #FFF;\n}\n\n* {\n    box-sizing: border-box;\n    margin: 0;\n    padding: 0;\n    font-family: 'Montserrat', sans-serif;\n    font-weight: 400;\n}\n\nh1 {\n    font-size: 25px;\n}\n\nimg{\n    max-width: 100%;\n}","$mainBackground: rgb(26, 26, 26);"]}]);
+exports.push([module.i, "body {\n  background-color: #1a1a1a;\n  color: #FFF;\n}\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  font-family: \"Montserrat\", sans-serif;\n  font-weight: 400;\n}\n\nh1 {\n  font-size: 25px;\n}\n\nimg {\n  max-width: 100%;\n}", "",{"version":3,"sources":["/Users/hieudeptrai/MyProjects/myblog/styles/styles.scss","/Users/hieudeptrai/MyProjects/myblog/styles/_colors.scss"],"names":[],"mappings":"AAEA;EACI,yBCHa;EDIb,WAAA;AADJ;;AAIA;EACI,sBAAA;EACA,SAAA;EACA,UAAA;EACA,qCAAA;EACA,gBAAA;AADJ;;AAIA;EACI,eAAA;AADJ;;AAIA;EACI,eAAA;AADJ","file":"styles.scss","sourcesContent":["@import \"colors\";\n\nbody{\n    background-color: $mainBackground;\n    color: #FFF;\n}\n\n* {\n    box-sizing: border-box;\n    margin: 0;\n    padding: 0;\n    font-family: 'Montserrat', sans-serif;\n    font-weight: 400;\n}\n\nh1 {\n    font-size: 25px;\n}\n\nimg{\n    max-width: 100%;\n}","$mainBackground: rgb(26, 26, 26);"]}]);
 
 
 /***/ }),
@@ -3976,7 +3976,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/hieudeptrai/Desktop/MyProject/myblog/pages/_app.js";
+var _jsxFileName = "/Users/hieudeptrai/MyProjects/myblog/pages/_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
 
@@ -4103,7 +4103,7 @@ if (true) {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! next-client-pages-loader?page=%2F_app&absolutePagePath=private-next-pages%2F_app.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_app&absolutePagePath=private-next-pages%2F_app.js!./");
-module.exports = __webpack_require__(/*! /home/hieudeptrai/Desktop/MyProject/myblog/node_modules/next/dist/client/router.js */"./node_modules/next/dist/client/router.js");
+module.exports = __webpack_require__(/*! /Users/hieudeptrai/MyProjects/myblog/node_modules/next/dist/client/router.js */"./node_modules/next/dist/client/router.js");
 
 
 /***/ }),
