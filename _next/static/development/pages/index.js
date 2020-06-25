@@ -925,7 +925,7 @@ var PostBox = /*#__PURE__*/function (_PureComponent) {
 /*! exports provided: title, description, url, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"title\":\"Hlog - Cùng nhau mò mẫm\",\"description\":\"Cùng nhau chia sẻ kinh nghiệm, mò mẫm kiến thức mới\",\"url\":\"https://phanletrunghieu.github.io\"}");
+module.exports = JSON.parse("{\"title\":\"Hlog - Code for good, not for food\",\"description\":\"Cùng nhau chia sẻ kinh nghiệm, mò mẫm kiến thức mới\",\"url\":\"https://phanletrunghieu.github.io\"}");
 
 /***/ }),
 
