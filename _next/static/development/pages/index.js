@@ -899,15 +899,7 @@ var PostBox = /*#__PURE__*/function (_PureComponent) {
           lineNumber: 20,
           columnNumber: 25
         }
-      }, __jsx(react_markdown__WEBPACK_IMPORTED_MODULE_7___default.a, {
-        source: Object(_utils_common__WEBPACK_IMPORTED_MODULE_9__["truncateSummary"])(markdownBody),
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21,
-          columnNumber: 29
-        }
-      })))));
+      }))));
     }
   }]);
 
@@ -16573,7 +16565,7 @@ function truncateSummary(content) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 3:
 /*!********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fhieudeptrai%2FMyProjects%2Fmyblog%2Fpages%2Findex.js ***!
   \********************************************************************************************************************************/
@@ -16596,5 +16588,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
